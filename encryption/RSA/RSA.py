@@ -3,13 +3,16 @@ from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives.asymmetric import padding
+import random
 
 # 生成秘钥，并保存到文件
+import os
+
 def generate_key():
+    key_size = 2048  # 密钥长度
     private_key = rsa.generate_private_key(
         public_exponent=65537,
-        #key_size=2048,
-        key_size=1024,
+        key_size=key_size,
         backend=default_backend()
     )
     public_key = private_key.public_key()
@@ -23,10 +26,6 @@ def generate_key():
     with open('private_key.pem', 'wb') as f:
         f.write(pem)
 
-    # 打印私钥
-    print("Private Key:")
-    print(pem.decode())
-
     # 存储公钥到文件
     pem = public_key.public_bytes(
         encoding=serialization.Encoding.PEM,
@@ -35,9 +34,8 @@ def generate_key():
     with open('public_key.pem', 'wb') as f:
         f.write(pem)
 
-    # 打印公钥
-    print("\nPublic Key:")
-    print(pem.decode())
+    return private_key, public_key
+
 
 # 从文件读取秘钥
 def load_private_key():
