@@ -1,0 +1,210 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "Buyers",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "infoList",
+						"type": "string[]"
+					}
+				],
+				"name": "addInformationList",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "listIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "infoIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "deleteInformation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "getInformationList",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getListCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "informationList",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "sellers",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "listIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "infoIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "newInfo",
+						"type": "string"
+					}
+				],
+				"name": "updateInformation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Data/DataTradingTest/StorageData.sol": "StorageData"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Data/DataTradingTest/Buyer.sol": {
+			"keccak256": "0x0b06956e6e1bafd7d5fae88b9eb1c52d94a85f9fd387d5179e81181f5ca08ee7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://460fb323931476bd53dd2cb3ca9e80b2ef2a6f17f8895a780f2a456a536f13df",
+				"dweb:/ipfs/QmVPxcyV2h9tJNjQpSQw7t7E7GBbz5D5sk5cQnXmu1s8HX"
+			]
+		},
+		"Data/DataTradingTest/Seller.sol": {
+			"keccak256": "0xbbab829360c085945c543d3249d96700db3ba0a5ba609526f136def9d9f07fdf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7a41e0c1b854492560ae5b5c9db0533a3e9e83fed64615e56ad01eb3abc62ca8",
+				"dweb:/ipfs/QmfLLxqMLuhm8PTuJRmUAF6DtrGTDvL4Fe2RsfbGvzeV1u"
+			]
+		},
+		"Data/DataTradingTest/StorageData.sol": {
+			"keccak256": "0x86c5f015b066214fb1d795c58fc9652e7732755ce0f0bd91019d6453e02d9ad5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c765a461ff97eecefa9c585d98c4379cbde0189f86ce54407d2b7f532cf6f0a6",
+				"dweb:/ipfs/QmW6PKj3txYWuUSruQGrdfiJcrzYk7hoqeyKmhC4XLbcdy"
+			]
+		}
+	},
+	"version": 1
+}
