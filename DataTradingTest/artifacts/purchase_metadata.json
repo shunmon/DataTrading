@@ -1,0 +1,254 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_storageContractAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "DepositReceived",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "ItemPurchased",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "EncryptedInfo",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Person",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "depositPaid",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "deposits",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isItemSold",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "itemPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_fixedItemPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "payDeposit",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "refundDeposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"DataTradingTest/purchase.sol": "purchase"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"DataTradingTest/Buyer.sol": {
+			"keccak256": "0x28e3622d420c60abd3e3d62bf0db2fa112657c6820583d03881e3a2bdecb0877",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2f6eef311790809ce8c3d8f425911b671707cd7a174cef1b6452b0419c19e984",
+				"dweb:/ipfs/QmUJ5kVMQ6uRXWBs5M6ri986tBRhGGynbvkpi5vRur284K"
+			]
+		},
+		"DataTradingTest/Seller.sol": {
+			"keccak256": "0xf9da824a487f81d9ca5f0d2b0e07449166142f46e416a59bce13d7fed5d78398",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://128d7a19e9b0c5d9bb52bb6031f21772a413d54d8fe4c1ca00569696abbf3c95",
+				"dweb:/ipfs/QmTTpU3YHjWUMRm6nKsRRTNcVbbnetTawgviRewUFXJG6C"
+			]
+		},
+		"DataTradingTest/StorageData.sol": {
+			"keccak256": "0xe15b072f891e36d5a516aa5cb88e9b11831d068b21c3dad201eb1de7aee8e92e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://28db3489f5c2f45e49dc533faa5322821117322569bc669986e9d7b0f3339e9e",
+				"dweb:/ipfs/QmVPmtAPzpYPL6dgYrHEsHLZPVRzwAobnatKasRohrNNW5"
+			]
+		},
+		"DataTradingTest/purchase.sol": {
+			"keccak256": "0x84f22684790bf29eda81d6206950b43bd432d757ea0efa8fba7c13410fc92ff6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://83e453b4424cb2ea47c527c7945da7602631bd84bf98dca70248a2d88cd5cb39",
+				"dweb:/ipfs/QmYNJ4eGrHhgkyATT9DfdC3fDems1TkLVU9eG7SMn4aUTT"
+			]
+		}
+	},
+	"version": 1
+}
