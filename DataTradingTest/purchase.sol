@@ -19,6 +19,7 @@ contract purchase {
 
     //传输信息
     bytes32[] public EncryptedInfo;
+    
     //用户押金支付绑定
     mapping(address => uint256) public deposits;
     mapping(address => bool) public depositPaid;

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"DataTradingTest/UntraceableVoting.sol": "SafeMath"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"DataTradingTest/UntraceableVoting.sol": {
+			"keccak256": "0x7b329ce78b261509c9f0e61819acfc3c28c2faa978beaeb580c43e6a696dde26",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f8b083fae1a1e98ac47b45eefa0c2a4bb72da5d96adf42ffc928de8c65daaa73",
+				"dweb:/ipfs/QmcKP9CbDCqzyDoSw28H2B6qa99TgKgNaBxqjuQo2UTgg3"
+			]
+		}
+	},
+	"version": 1
+}

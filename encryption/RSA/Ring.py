@@ -55,10 +55,13 @@ if __name__ == "__main__":
     message = b"Hello, world!"
 
     # 环签名
-    r, s = ring_signature(message, [ecc_private_key1, ecc_private_key2], [rsa_public_key1, rsa_public_key2])
-    print("r",r,"\n", "s",s)
+    r, s = ring_signature(message, [ecc_private_key1, ecc_private_key2],
+                          [rsa_public_key1, rsa_public_key2])
+    print("r", r, "\n", "s", s)
+
     # 验证环签名
-    verified = verify_ring_signature(message, r, s, [ecc_public_key1, ecc_public_key2], [rsa_private_key1, rsa_private_key2])
+    verified = verify_ring_signature(message, r, s, [ecc_public_key1, ecc_public_key2],
+                                     [rsa_private_key1, rsa_private_key2])
 
     if verified:
         print("Ring signature verified successfully!")
